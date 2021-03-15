@@ -5,18 +5,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        SvetoveStrany strana = SvetoveStrany.SEVER;
 
-        for(SvetoveStrany s : SvetoveStrany.values()){
-            if(s == SvetoveStrany.SEVER){
-                System.out.println("rovne");
-            }else{
-                System.out.println("nerovne");
-            }
-        }
 
-        checkSever(SvetoveStrany.valueOf("SEVER"));
-        checkSever(SvetoveStrany.valueOf("JUH"));
+        checkSever(SvetoveStrany.fromString("SEVER"));
+        checkSever(SvetoveStrany.fromString("JUH"));
 
 
 
