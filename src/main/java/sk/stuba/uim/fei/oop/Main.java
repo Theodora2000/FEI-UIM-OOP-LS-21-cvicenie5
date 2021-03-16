@@ -1,24 +1,20 @@
 package sk.stuba.uim.fei.oop;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
+        List<Animal> animals = List.of(new Bird(), new Bird(), new Dog());//nemodifikovatelny list
+        var animalsEditable = new ArrayList<>(animals);//tuto ho uz mozem modifikovat
 
-        checkSever(SvetoveStrany.fromString("SEVER"));
-        checkSever(SvetoveStrany.fromString("JUH"));
-
-
-
-    }
-
-    static void checkSever(SvetoveStrany s){
-        if(s == SvetoveStrany.SEVER){
-            System.out.println("rovne");
-        }else{
-            System.out.println("nerovne");
+        for(Animal animal : animals)
+        {
+            animal.makeSound();
         }
     }
 }
+
+

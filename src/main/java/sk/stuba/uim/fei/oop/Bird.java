@@ -2,6 +2,10 @@ package sk.stuba.uim.fei.oop;
 
 
 public class Bird extends Animal {
+/*
+    public Bird(String meno) {
+        super(meno);
+    }*/
 
     @Override
     void makeSound() {
