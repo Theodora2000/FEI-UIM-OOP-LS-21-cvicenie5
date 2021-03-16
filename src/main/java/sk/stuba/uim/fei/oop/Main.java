@@ -18,6 +18,7 @@ public class Main {
             if(animal instanceof Parrot){
                 ((Parrot) animal).repeat("Hello world");
             }
+            System.out.println("----");
         }
     }
 }
