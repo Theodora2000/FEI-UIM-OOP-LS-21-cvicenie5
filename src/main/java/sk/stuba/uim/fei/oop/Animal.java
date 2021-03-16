@@ -13,7 +13,7 @@ public abstract class Animal implements Comparable<Animal> {
 
     @Override
     public int compareTo(Animal o) {
-        return this.name.compareTo(o.name);
+        return -this.name.compareTo(o.name);
     }
 
     @Override
