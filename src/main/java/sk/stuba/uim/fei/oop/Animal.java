@@ -5,9 +5,9 @@ public abstract class Animal implements Comparable<Animal> {
 
     private String name;
 
-   /* public Animal(String name) {
+    public Animal(String name) {
         this.name = name;
-    }*/
+    }
 
     abstract void makeSound();
 

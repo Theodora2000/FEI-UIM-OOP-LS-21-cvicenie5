@@ -1,20 +1,22 @@
 package sk.stuba.uim.fei.oop;
 
-class NotSeverException extends Exception {
-
-    public NotSeverException() {
-        super();
+public class NoServerException extends Exception {
+    public NoServerException() {
     }
 
-    public NotSeverException(String message) {
+    public NoServerException(String message) {
         super(message);
     }
 
-    public NotSeverException(String message, Throwable cause) {
+    public NoServerException(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public NotSeverException(Throwable cause) {
+    public NoServerException(Throwable cause) {
         super(cause);
+    }
+
+    public NoServerException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
     }
 }

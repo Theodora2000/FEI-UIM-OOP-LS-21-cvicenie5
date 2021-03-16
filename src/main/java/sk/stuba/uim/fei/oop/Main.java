@@ -6,21 +6,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-
-        checkServer(SvetoveStrany.fromString("SEVER"));
-        checkServer(SvetoveStrany.fromString("sever"));
+    List<Animal> animals = new ArrayList<>(List.of(new Dog("Rex"), new Parrot("Kiki")));
+    animals.sort(null);
+        System.out.println(animals.toString());
     }
 
-    static void checkServer(SvetoveStrany s){
 
-            if(s.jeSever){
-                System.out.println("rovne");
-            }
-            else{
-                System.out.println("nerovne");
-            }
-
-    }
 }
 
 
