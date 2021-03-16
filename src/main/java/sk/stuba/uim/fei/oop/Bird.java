@@ -15,4 +15,7 @@ public class Bird extends Animal {
     void fly() {
         System.out.println("*flaps wings*");
     }
-}
+
+    void repeat(String sentence) {
+        System.out.println("Parrot says: "+ sentence);
+    }}
